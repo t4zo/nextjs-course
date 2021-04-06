@@ -1,0 +1,15 @@
+@use 'styles/base';
+
+.logo {
+  text-transform: uppercase;
+  font-size: base.$size-5;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  color: base.$color-grey-50;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: base.$size-8;
+  }
+}

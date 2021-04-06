@@ -1,11 +1,11 @@
 import Layout from "components/Layout";
 
-function PostsPage() {
+function ContactPage() {
   return (
-    <Layout title='Postagens | NBlog'>
+    <Layout title='Contato | NBlog'>
       <p>s</p>
     </Layout>
   );
 }
 
-export default PostsPage;
+export default ContactPage;

@@ -4,7 +4,7 @@ import Layout from 'components/Layout';
 
 function HomePage() {
   return (
-    <Layout title='Home | Next.js + TypeScript Example'>
+    <Layout title='NBlog'>
       <Hero />
       <FeaturedPosts />
     </Layout>
