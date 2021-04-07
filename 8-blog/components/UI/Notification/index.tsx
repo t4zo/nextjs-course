@@ -14,7 +14,6 @@ function Notification({ title, message, status }: INotification) {
     statusClasses = styles.error;
   }
 
-  // return (
   return ReactDOM.createPortal(
     <div className={`${styles.notification} ${statusClasses}`}>
       <h2>{title}</h2>
