@@ -1,0 +1,28 @@
+@use 'styles/base';
+  
+.content {
+  width: 95%;
+  max-width: 60rem;
+  margin: base.$size-8 auto;
+  font-size: base.$size-5;
+  line-height: base.$size-8;
+  background-color: base.$color-grey-100;
+  border-radius: 6px;
+  padding: base.$size-4;
+
+  p {
+    color: base.$color-grey-800;
+  }
+
+  .image {
+    margin: base.$size-4 auto;
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: base.$size-8;
+  }
+}

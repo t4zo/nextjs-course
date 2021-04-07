@@ -1,0 +1,19 @@
+@use 'styles/base';
+
+.posts {
+  width: 90%;
+  max-width: 60rem;
+  margin: base.$size-8 auto;
+
+  h1 {
+    font-size: base.$size-8;
+    color: base.$color-grey-800;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .posts h1 {
+    font-size: base.$size-16;
+  }
+}

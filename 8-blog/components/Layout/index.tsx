@@ -3,6 +3,8 @@ import Head from 'next/head';
 
 import Navigation from './Navigation';
 
+import styles from './layout.module.scss';
+
 type Props = {
   children?: ReactNode;
   title?: string;
@@ -18,7 +20,7 @@ function Layout({ children, title = 'Blog' }: Props) {
       </Head>
       <Navigation />
       <main>{children}</main>
-      <footer>
+      <footer className={styles.footer}>
         <span>Desenvolvido por Tácio de Souza Campos</span>
       </footer>
     </div>

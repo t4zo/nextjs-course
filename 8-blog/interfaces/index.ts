@@ -4,7 +4,17 @@
 //
 // import { User } from 'path/to/interfaces';
 
-export type User = {
-  id: number
-  name: string
+export interface User {
+  id: number;
+  name: string;
+}
+
+export interface Post {
+  slug: string;
+  title?: string;
+  image?: string;
+  excerpt?: string;
+  date?: string;
+  content?: string;
+  isFeatured?: boolean;
 }

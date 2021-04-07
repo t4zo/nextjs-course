@@ -1,4 +1,4 @@
-import ListItem from 'components/ListItem'
+import ListItem from 'components/User/ListItem'
 import { User } from 'interfaces'
 
 type Props = {
