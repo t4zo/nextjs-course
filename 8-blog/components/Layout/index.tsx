@@ -10,7 +10,7 @@ type Props = {
   title?: string;
 };
 
-function Layout({ children, title = 'Blog' }: Props) {
+function Layout({ children, title = 'NBlog' }: Props) {
   return (
     <div>
       <Head>

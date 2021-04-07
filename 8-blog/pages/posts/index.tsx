@@ -2,12 +2,12 @@ import Layout from "components/Layout";
 import Posts from 'components/Posts';
 import { getAllPosts } from "helpers/posts-util";
 
-import { Post } from "interfaces";
+import { IPost } from "interfaces";
 
 import styles from './posts.module.scss';
 
 type Props = {
-  posts: Post[];
+  posts: IPost[];
 }
 
 function PostsPage({ posts }: Props) {

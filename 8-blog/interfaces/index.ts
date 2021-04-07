@@ -9,7 +9,7 @@ export interface User {
   name: string;
 }
 
-export interface Post {
+export interface IPost {
   slug: string;
   title?: string;
   image?: string;
@@ -17,4 +17,16 @@ export interface Post {
   date?: string;
   content?: string;
   isFeatured?: boolean;
+}
+
+export interface IContact {
+  email: string;
+  name: string;
+  message: string;
+}
+
+export interface INotification {
+  title: string;
+  message: string;
+  status: string;
 }

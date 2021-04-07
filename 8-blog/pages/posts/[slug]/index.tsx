@@ -7,11 +7,11 @@ import PostHeader from 'components/Posts/PostHeader';
 
 import style from './post.module.scss';
 import { getPostData, getPostsFiles } from 'helpers/posts-util';
-import { Post } from 'interfaces';
+import { IPost } from 'interfaces';
 import Image from 'next/image';
 
 type Props = {
-  post: Post;
+  post: IPost;
 };
 
 function PostPage({ post }: Props) {

@@ -1,11 +1,11 @@
-import { Post } from 'interfaces';
+import { IPost } from 'interfaces';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import style from './post-item.module.scss';
 
 type Props = {
-  post: Post;
+  post: IPost;
 }
 
 function PostItem({ post }: Props) {
