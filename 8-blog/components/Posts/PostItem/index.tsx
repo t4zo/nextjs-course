@@ -9,7 +9,7 @@ type Props = {
 }
 
 function PostItem({ post }: Props) {
-  const formattedDate = new Date(post.date).toLocaleDateString('pt-BR', {
+  const formattedDate = new Date(post.date).toLocaleDateString('pt-BR' || 'en-US', {
     day: 'numeric',
     month: 'long',
     year: 'numeric'

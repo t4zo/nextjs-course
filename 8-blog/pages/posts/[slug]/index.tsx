@@ -1,6 +1,9 @@
 import ReactMarkdown from 'react-markdown';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import atomDark from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
+import jsSH from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript';
+import jsxSH from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
+import cssSH from 'react-syntax-highlighter/dist/cjs/languages/prism/css';
 
 import Layout from 'components/Layout';
 import PostHeader from 'components/Posts/PostHeader';
@@ -13,6 +16,10 @@ import Image from 'next/image';
 type Props = {
   post: IPost;
 };
+
+SyntaxHighlighter.registerLanguage('js', jsSH);
+SyntaxHighlighter.registerLanguage('jsx', jsxSH);
+SyntaxHighlighter.registerLanguage('css', cssSH);
 
 function PostPage({ post }: Props) {
   const imagePostPath = '/images/posts';

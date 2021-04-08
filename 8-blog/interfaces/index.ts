@@ -11,12 +11,12 @@ export interface User {
 
 export interface IPost {
   slug: string;
-  title?: string;
-  image?: string;
+  title: string;
+  image: string;
+  date: string;
+  isFeatured: boolean;
   excerpt?: string;
-  date?: string;
   content?: string;
-  isFeatured?: boolean;
 }
 
 export interface IContact {

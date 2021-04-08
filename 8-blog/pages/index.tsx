@@ -2,12 +2,12 @@ import Layout from 'components/Layout';
 import Hero from 'components/Hero';
 import Posts from 'components/Posts';
 
-import { Post } from 'interfaces';
+import { IPost } from 'interfaces';
 import styles from './featured-posts.module.scss';
 import { getFeaturedPosts } from 'helpers/posts-util';
 
 type Props = {
-  posts: Post[];
+  posts: IPost[];
 }
 
 function HomePage({ posts }: Props) {
