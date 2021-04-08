@@ -57,7 +57,8 @@ function ContactPage() {
         name,
         message,
       });
-      if (response.statusText === 'Created') {
+      
+      if (response.status === 201) {
         setRequestStatus('success');
       }
     } catch (error) {
