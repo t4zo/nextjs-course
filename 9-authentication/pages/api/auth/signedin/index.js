@@ -1,4 +1,4 @@
-import { getFirebaseInstance } from '../../../../../firebase/db';
+import { getFirebaseInstance } from '../../../../firebase/db';
 
 export default async function handler(req, res) {
   if (req.method === 'GET') {

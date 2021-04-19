@@ -1,9 +1,22 @@
+// import { useEffect } from 'react';
 import Link from 'next/link';
-import { getSession } from 'next-auth/client';
+import { getSession, signOut } from 'next-auth/client';
 import Navigation from '../components/layout/navigation';
+
+// import { getFirebaseInstance } from '../firebase/db';
+
 import classes from './index.module.css';
 
 function HomePage({ session }) {
+  // useEffect(() => {
+  //   const firebase = getFirebaseInstance();
+  //   const firebaseAuth = firebase.auth();
+
+  //   if (!firebaseAuth.currentUser) {
+  //     signOut();
+  //   }
+  // }, []);
+
   return (
     <>
       <Navigation session={session} />
