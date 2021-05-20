@@ -20,7 +20,7 @@ export default NextAuth({
         const firebaseAuth = firebase.auth();
 
         if (firebaseAuth.currentUser) {
-          firebaseAuth.signOut();
+          await firebaseAuth.signOut();
         }
 
         try {
@@ -40,4 +40,14 @@ export default NextAuth({
       },
     }),
   ],
+  events: {
+    async signOut(_) {
+      const firebase = getFirebaseInstance();
+      const firebaseAuth = firebase.auth();
+
+      if (firebaseAuth.currentUser) {
+        await firebaseAuth.signOut();
+      }
+    },
+  },
 });
